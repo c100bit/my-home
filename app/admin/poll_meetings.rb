@@ -13,7 +13,6 @@ ActiveAdmin.register Poll::Meeting do
     column :count_negative
     column :text
     column :image do |i|
-      image_tag url_for(i.image), width: 50
     end
     column :created_at
     actions
