@@ -7,7 +7,9 @@ class CreateHouses < ActiveRecord::Migration[6.0]
       t.integer :entrance_count
       t.float :total_area
       t.float :common_area
-      t.float :budjet
+      t.float :balance
+      t.float :debit
+      t.float :credit
       t.references :admin
 
       t.timestamps

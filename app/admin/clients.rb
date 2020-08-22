@@ -11,6 +11,9 @@ ActiveAdmin.register User::Client do
     column :individual
     column :cadastral_number
     column :role
+    column :house do |h|
+      link_to h.house.address, admin_house_path(h.house)
+    end
     column :created_at
     actions
   end

@@ -7,7 +7,10 @@ ActiveAdmin.register House do
     column :kind
     column :total_area
     column :common_area
-    column :budjet
+    column :debit
+    column :credit
+    column :balance
+    column :count_users
     column :admin
     column :uk
 

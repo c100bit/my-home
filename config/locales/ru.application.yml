@@ -59,11 +59,16 @@ ru:
         company_form: ОПФ
         company_site: Сайт
       user/client:
+        house: Дом
         name: Абонент
         individual: Физ. лицо
         cadastral_number: Кадастровый номер
       house:
         address: Адрес
+        debit: Доходы
+        credit: Расходы
+        balance: Баланс
+        count_users: Кол-во жильцов
         kind: Тип дома
         uk: Управляющая компания
         total_area: Общая площадь

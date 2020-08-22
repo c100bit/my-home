@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_22_020302) do
+ActiveRecord::Schema.define(version: 2020_08_22_135713) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -70,7 +70,9 @@ ActiveRecord::Schema.define(version: 2020_08_22_020302) do
     t.integer "entrance_count"
     t.float "total_area"
     t.float "common_area"
-    t.float "budjet"
+    t.float "balance"
+    t.float "debit"
+    t.float "credit"
     t.bigint "admin_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -131,8 +133,10 @@ ActiveRecord::Schema.define(version: 2020_08_22_020302) do
     t.json "tokens"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "house_id"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["house_id"], name: "index_users_on_house_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
@@ -142,4 +146,5 @@ ActiveRecord::Schema.define(version: 2020_08_22_020302) do
   add_foreign_key "houses", "users", column: "admin_id"
   add_foreign_key "houses", "users", column: "uk_id"
   add_foreign_key "notices", "users"
+  add_foreign_key "users", "houses"
 end

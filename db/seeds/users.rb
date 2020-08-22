@@ -9,6 +9,7 @@ module Seeds
                            phone: '9600000001',
                            address: 'Санкт-Петербург, ул. Тверская, 10',
                            role: :participant,
+                           house: House.first,
                            password: 'participant@test.local')
 
       User::Client.create!(email: 'participant-company@test.local',
@@ -21,6 +22,7 @@ module Seeds
                            phone: '9500000001',
                            address: 'Санкт-Петербург, ул. Тверская, 12',
                            role: :participant,
+                           house: House.first,
                            password: 'participant-company@test.local')
 
       User::Client.create!(email: 'citizen@test.local',
@@ -31,6 +33,7 @@ module Seeds
                            phone: '89600000001',
                            address: 'Санкт-Петербург, ул. Тверская, 11',
                            role: :citizen,
+                           house: House.last,
                            password: 'citizen@test.local')
 
       User::Worker.create!(email: 'gji@test.local',
@@ -42,16 +45,6 @@ module Seeds
                            address: 'Москва, ул. Тверская, 10',
                            role: :gji,
                            password: 'gji@test.local')
-
-      User::Worker.create!(email: 'mc@test.local',
-                           name: 'Управляющая компания Чистый Двор',
-                           company_form: :ooo,
-                           company_site: 'http://site.ru',
-                           individual: false,
-                           phone: '33-33-33',
-                           address: 'Санкт-Петербург, ул. Тверская, 11',
-                           role: :mc,
-                           password: 'mc@test.local')
 
       AdminUser.create!(email: 'admin@test.local',
                         password: 'admin@test.local',
