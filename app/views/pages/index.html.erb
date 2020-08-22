@@ -1,0 +1,431 @@
+<body data-spy="scroll" data-target=".mainmenu-area">
+    <!-- Preloader-content -->
+    <div class="preloader">
+        <span><i class="lnr lnr-sun"></i></span>
+    </div>
+    <!-- MainMenu-Area -->
+    <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary_menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+             <a class="navbar-brand" href="#"><img src="<%= image_path("") %>"></a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="primary_menu">
+                <ul class="nav navbar-nav mainmenu">
+                    <li class="active"><a href="#home_page">Домой</a></li>
+                    <li><a href="#about_page">О нас</a></li>
+                    <li><a href="#features_page">Особенности</a></li>
+                    <li><a href="#price_page">Тарифы</a></li>
+                    <li><a href="#questions_page">FAQ</a></li>
+                    <li><a href="#contact_page">Контакты</a></li>
+                </ul>
+                <div class="right-button hidden-xs">
+                    <a href="/admin">Админ-панель</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- MainMenu-Area-End -->
+    <!-- Home-Area -->
+    <header class="home-area overlay angle" id="home_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 hidden-sm col-md-5">
+                    <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="<%= image_path("") %>" alt="">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-7">
+                    <div class="space-80 hidden-xs"></div>
+                    <h1 class="wow fadeInUp" data-wow-delay="0.4s">Управляйте вашим домом легко!</h1>
+                    <div class="space-20"></div>
+                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                        <p>Просто, удобно, ...  </p>
+                    </div>
+                    <div class="space-20"></div>
+                    <a href="https://google.com" class="bttn-white wow fadeInUp" data-wow-delay="0.8s"><i class="lnr lnr-download"></i>Скачать приложение</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home-Area-End -->
+    <!-- About-Area -->
+    <section class="section-padding" id="about_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="page-title text-center">
+                        <img src="<%= image_path("") %>" alt="About Logo" style='width:65px'>
+                        <div class="space-20"></div>
+                        <h5 class="title">О нас</h5>
+                        <div class="space-30"></div>
+                        <h3 class="blue-color">Приложение для получения управления своим домом</h3>
+                        <div class="space-20"></div>
+                        <p>Уведомления, ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-Area-End -->
+
+
+    <!-- Feature-Area -->
+    <section class="feature-area section-padding-top" id="features_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <div class="page-title text-center">
+                        <h5 class="title">Особенности</h5>
+                        <div class="space-10"></div>
+                        <h3>Особенности нашего приложения</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-rocket"></i>
+                        </div>
+                        <h4>Быстрое и удобное</h4>
+                        <p>Удобное в использование, работает очень быстро</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-paperclip"></i>
+                        </div>
+                        <h4>Простота использования</h4>
+                        <p>Просто и понятный интерфейс, легко разобраться</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-cloud-download"></i>
+                        </div>
+                        <h4>Облачное хранилище</h4>
+                        <p>Облачное хранилище данных</p>
+                    </div>
+                    <div class="space-60"></div>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-4">
+                    <figure class="mobile-image">
+                    <img src="<%= image_path("") %>">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-clock"></i>
+                        </div>
+                        <h4>Уведомления</h4>
+                        <p>Уведомления  никогда не пропустите</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-laptop-phone"></i>
+                        </div>
+                        <h4>Новостная лента</h4>
+                        <p>Будьте в курсе всех событий</p>
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-cog"></i>
+                        </div>
+                        <h4>Блокчейн-технология</h4>
+                        <p>Для сохранения результатов голосования</p>
+                    </div>
+                    <div class="space-60"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature-Area-End -->
+    <!-- Testimonial-Area -->
+    <section class="testimonial-area" id="testimonial_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">Отзывы</h5>
+                        <h3 class="dark-color">Наши пользователи довольны</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="team-slide">
+                        <div class="team-box">
+                            <div class="team-image">
+                                  <img src="<%= image_path("team-1.png") %>">
+                            </div>
+                            <h4>Иван Петров</h4>
+                            <p>Крутое приложение</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                               <img src="<%= image_path("team-1.png") %>">
+                            </div>
+                            <h4>Сергей Петров</h4>
+                            <p>Молодцы ребята</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                             <img src="<%= image_path("team-1.png") %>">
+                            </div>
+                            <h4>Раиса Степанова</h4>
+                            <p>Лучшее, что я видела</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                              <img src="<%= image_path("team-1.png") %>">
+                            </div>
+                            <h4>Сергей Иванов</h4>
+                            <p>Очень удобное приложение</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                              <img src="<%= image_path("team-1.png") %>">
+                            </div>
+                            <h4>Иван Козлов</h4>
+                            <p>Мое самое любимое приложение</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                              <img src="<%= image_path("team-1.png") %>">
+                            </div>
+                            <h4>Анна Иванова</h4>
+                            <p>Обязательно сделаю донат</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial-Area-End -->
+
+
+    <!-- Download-Area -->
+    <div class="download-area overlay" id="download_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 hidden-sm">
+                    <figure class="mobile-image">
+                        <img src="<%= image_path("") %>" style='width:300px'>
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-6 section-padding">
+                    <h3 class="white-color">Скачать приложение</h3>
+                    <div class="space-20"></div>
+                    <p>Скачайте приложение бесплатно для вашей платформы</p>
+                    <div class="space-60"></div>
+                    <a href="https://www.apple.com" class="bttn-white sq"><img src="<%= image_path("apple-icon.png") %>">Apple Store</a>
+                    <a href="https://www.google.com" class="bttn-white sq"><img src="<%= image_path("play-store-icon.png") %>">Play Store</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Download-Area-End -->
+    <!--Price-Area -->
+    <section class="section-padding price-area" id="price_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">Тарифы</h5>
+                        <h3 class="dark-color">Наши тарифы</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <span class="lnr lnr-rocket"></span>
+                            </div>
+                            <h4 class="upper">Простой</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>Простая установка</li>
+                                <li>Безлимитная поддержка</li>
+                                <li>Уникальный дизайн</li>
+                            </ul>
+                        </div>
+                        <div class="price-rate">
+                            <sup>&#8381;</sup> <span class="rate">0</span> <small>/Месяц</small>
+                        </div>
+                        <div class="price-footer">
+                            <a href="https://google.com" class="bttn-white">Скачать</a>
+                        </div>
+                    </div>
+                    <div class="space-30 hidden visible-xs"></div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <span class="lnr lnr-diamond"></span>
+                            </div>
+                            <h4 class="upper">Стандарт</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>Простая установка</li>
+                                <li>Безлимитная поддержка</li>
+                                <li>Уникальный дизайн</li>
+                            </ul>
+                        </div>
+                        <div class="price-rate">
+                            <sup>&#8381;</sup> <span class="rate">49</span> <small>/Месяц</small>
+                        </div>
+                        <div class="price-footer">
+                            <a href="https://google.com" class="bttn-white">Скачать</a>
+                        </div>
+                    </div>
+                    <div class="space-30 hidden visible-xs"></div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <span class="lnr lnr-pie-chart"></span>
+                            </div>
+                            <h4 class="upper">Мощный</h4>
+                        </div>
+                        <div class="price-body">
+                            <ul>
+                                <li>Простая установка</li>
+                                <li>Безлимитная поддержка</li>
+                                <li>Уникальный дизайн</li>
+                            </ul>
+                        </div>
+                        <div class="price-rate">
+                            <sup>&#8381;</sup> <span class="rate">99</span> <small>/Месяц</small>
+                        </div>
+                        <div class="price-footer">
+                            <a href="https://google.com" class="bttn-white">Скачать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Price-Area-End -->
+    <!--Questions-Area -->
+    <section id="questions_page" class="questions-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">FAQ</h5>
+                        <h3 class="dark-color">Часто задаваемые вопросы</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="toggole-boxs">
+                        <h3>Где взять?</h3>
+                        <div>
+                            <p>Скачайте приложение для вашего телефона в play-маркете или app-store.</p>
+                        </div>
+                        <h3>Я могу голосовать?</h3>
+                        <div>
+                            <p>Да, вы можете проголосвать, результаты будут сохранены в блокчейн</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="space-20 hidden visible-xs"></div>
+                    <div class="toggole-boxs">
+                        <h3>Как войти?</h3>
+                        <div>
+                            <p>Вы можете авторизоваться через учетную запись ЕСИА</p>
+                        </div>
+                        <h3>Я смогу смотреть информацию по дому?</h3>
+                        <div>
+                            <p>Да вы можете увидеть отчеты по работам, бюджету дома</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Questions-Area-End -->
+
+    <!-- Footer-Area -->
+    <footer class="footer-area" id="contact_page">
+        <div class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-title text-center">
+                            <h5 class="title">Контакты</h5>
+                            <h3 class="dark-color">Связаться с нами</h3>
+                            <div class="space-60"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-map-marker"></span>
+                            </div>
+                            <p>Россия, г. Москва<br /> ул. Победы, д.10</p>
+                        </div>
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-phone-handset"></span>
+                            </div>
+                            <p>8(900) 000-00-00<br />8(900) 000-00-01</p>
+                        </div>
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-envelope"></span>
+                            </div>
+                            <p>инфо@мой-дом.рф<br />менеджер@мой-дом.рф
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer-Area-End -->
+    <!--Vendor-JS-->
+    <script src="<%= asset_url('vendor/jquery-1.12.4.min.js')%>"></script>
+    <script src="<%= asset_url('vendor/jquery-ui.js')%>"></script>
+    <script src="<%= asset_url('vendor/bootstrap.min.js')%>"></script>
+    <script src="<%= asset_url('owl.carousel.min.js')%>"></script>
+
+    <script src="<%= asset_url('contact-form.js')%>"></script>
+    <script src="<%= asset_url('ajaxchimp.js')%>"></script>
+    <script src="<%= asset_url('scrollUp.min.js')%>"></script>
+
+    <script src="<%= asset_url('magnific-popup.min.js')%>"></script>
+    <script src="<%= asset_url('wow.min.js')%>"></script>
+    <script src="<%= asset_url('main.js')%>"></script>
+
+</body>

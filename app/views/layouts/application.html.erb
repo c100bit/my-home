@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyHome</title>
+    <title>МОЙ-ДОМ.РФ</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+          <script src="<%= asset_url('vendor/modernizr-2.8.3.min.js')%>"></script>
   </head>
 
-  <body>
     <%= yield %>
-  </body>
+
 </html>

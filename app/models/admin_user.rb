@@ -18,7 +18,6 @@
 #  index_admin_users_on_reset_password_token  (reset_password_token) UNIQUE
 #
 class AdminUser < ApplicationRecord
-
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable,
@@ -27,7 +26,7 @@ class AdminUser < ApplicationRecord
   ADMIN = 'admin'.freeze
   SUPER_ADMIN = 'super_admin'.freeze
 
-  validates :email, presence: true, email: true
+  validates :email, presence: true
   validates :password, presence: true
 
   def admin?
@@ -37,5 +36,4 @@ class AdminUser < ApplicationRecord
   def super_admin?
     role == SUPER_ADMIN
   end
-
 end
