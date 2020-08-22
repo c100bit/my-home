@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[6.0]
-
   def change
     create_table(:users) do |t|
       ## Required
@@ -31,12 +30,21 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[6.0]
       t.datetime :locked_at
 
       ## User Info
-      t.string :first_name, null: false
-      t.string :last_name, null: false
-      t.string :middle_name
-      t.string :phone, null: false
-      t.string :address, null: false
-      t.string :email, null: false
+      t.string :user_name
+      t.string :user_passport
+
+      t.string :company_name
+      t.integer :company_form
+      t.string :company_site
+      t.string :company_place
+
+      t.boolean :individual, default: false
+
+      t.string :email
+      t.string :cadastral_number
+      t.string :phone
+      t.string :address
+      t.integer :role
 
       ## Tokens
       t.json :tokens
@@ -50,5 +58,4 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[6.0]
     add_index :users, :confirmation_token,   unique: true
     add_index :users, :unlock_token, unique: true
   end
-
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_20_220557) do
+ActiveRecord::Schema.define(version: 2020_08_22_020302) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -63,6 +63,22 @@ ActiveRecord::Schema.define(version: 2020_06_20_220557) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "houses", force: :cascade do |t|
+    t.string "title"
+    t.integer "kind"
+    t.bigint "uk_id"
+    t.string "address"
+    t.integer "entrance_count"
+    t.float "total_area"
+    t.float "common_area"
+    t.float "budjet"
+    t.bigint "admin_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["admin_id"], name: "index_houses_on_admin_id"
+    t.index ["uk_id"], name: "index_houses_on_uk_id"
+  end
+
   create_table "news", force: :cascade do |t|
     t.string "title", null: false
     t.text "description", null: false
@@ -101,12 +117,18 @@ ActiveRecord::Schema.define(version: 2020_06_20_220557) do
     t.integer "failed_attempts", default: 0, null: false
     t.string "unlock_token"
     t.datetime "locked_at"
-    t.string "first_name", null: false
-    t.string "last_name", null: false
-    t.string "middle_name"
-    t.string "phone", null: false
-    t.string "address", null: false
-    t.string "email", null: false
+    t.string "user_name"
+    t.string "user_passport"
+    t.string "company_name"
+    t.integer "company_form"
+    t.string "company_site"
+    t.string "company_place"
+    t.boolean "individual", default: false
+    t.string "email"
+    t.string "cadastral_number"
+    t.string "phone"
+    t.string "address"
+    t.integer "role"
     t.json "tokens"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -118,5 +140,7 @@ ActiveRecord::Schema.define(version: 2020_06_20_220557) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "houses", "users", column: "admin_id"
+  add_foreign_key "houses", "users", column: "uk_id"
   add_foreign_key "notices", "users"
 end

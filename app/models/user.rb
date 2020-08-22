@@ -3,27 +3,33 @@
 # Table name: users
 #
 #  id                     :bigint           not null, primary key
-#  address                :string           not null
+#  address                :string
 #  allow_password_change  :boolean          default(FALSE)
+#  cadastral_number       :string
+#  company_form           :integer
+#  company_name           :string
+#  company_place          :string
+#  company_site           :string
 #  confirmation_sent_at   :datetime
 #  confirmation_token     :string
 #  confirmed_at           :datetime
-#  email                  :string           not null
+#  email                  :string
 #  encrypted_password     :string           default(""), not null
 #  failed_attempts        :integer          default(0), not null
-#  first_name             :string           not null
-#  last_name              :string           not null
+#  individual             :boolean          default(FALSE)
 #  locked_at              :datetime
-#  middle_name            :string
-#  phone                  :string           not null
+#  phone                  :string
 #  provider               :string           default("email"), not null
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
 #  reset_password_token   :string
+#  role                   :integer
 #  tokens                 :json
 #  uid                    :string           default(""), not null
 #  unconfirmed_email      :string
 #  unlock_token           :string
+#  user_name              :string
+#  user_passport          :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #
@@ -43,10 +49,8 @@ class User < ApplicationRecord
 
   include GraphqlDevise::Concerns::Model
 
-  validates :first_name, presence: true
-  validates :last_name, presence: true
-  validates :phone, presence: true
-  validates :address, presence: true
-
   has_many :notices
+
+  enum company_form: %i[ooo oao ao gu]
+  enum role: %i[gji mc participant citizen]
 end
