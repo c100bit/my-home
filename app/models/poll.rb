@@ -1,16 +1,23 @@
 class Poll < ApplicationRecord
   include ImageHelper
 
+  has_many :votes
+  has_many :users, through: :votes
+
   def count_votes
-    10
+    votes.count
   end
 
   def count_positive
-    6
+    votes.positive.count
   end
 
   def count_negative
-    4
+    votes.negative.count
+  end
+
+  def result
+    count_positive - count_negative
   end
 end
 

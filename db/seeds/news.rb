@@ -11,11 +11,15 @@ module Seeds
       ::News.create!(title: 'Отключение отопления ',
                      description: 'В связи с плановыми работами с 23-00 до 00-00')
 
-      Poll::Meeting.create!(starts_at: Time.current,
-                            title: 'Первое собрание собственников',
-                            text: 'Описание собрания',
+      p = Poll::Meeting.create!(starts_at: Time.current,
+                                title: 'Первое собрание собственников',
+                                text: 'Описание собрания',
 
-                            ends_at: Time.current + 5.days)
+                                ends_at: Time.current + 5.days)
+
+      p.votes.create!(user: User::Client.first, supports: true)
+      p.votes.create!(user: User::Client.second, supports: true)
+      p.votes.create!(user: User::Client.last, supports: false)
 
       Poll::Default.create!(starts_at: Time.current,
                             title: 'Первый опрос',
