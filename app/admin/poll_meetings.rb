@@ -1,5 +1,5 @@
 ActiveAdmin.register Poll::Meeting do
-  menu priority: 10
+  menu priority: 4
   permit_params :starts_at, :ends_at, :image, :text, :title
 
   index do

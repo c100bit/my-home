@@ -74,6 +74,9 @@ ru:
         few: Жилищных организаций
         many: Жилищных организаций
     attributes:
+      poll/meeting:
+        starts_at: Начало собрания
+        ends_at: Окончание собрания
       poll:
         title: Название
         count_votes: Кол-во голосов
