@@ -1,4 +1,5 @@
 ActiveAdmin.register User::Client do
+  menu priority: 2
   permit_params :email, :password, :password_confirmation,
                 :name, :phone, :individual, :address, :cadastral_number, :role, :flat
 

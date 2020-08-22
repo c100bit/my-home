@@ -1,5 +1,5 @@
-ActiveAdmin.register Debtor do
-  menu priority: 1
+ActiveAdmin.register Payment do
+  menu priority: 4
   permit_params :user, :sum
 
   index do
@@ -12,7 +12,6 @@ ActiveAdmin.register Debtor do
     column :sum
 
     column :created_at
-    column :updated_at
     actions
   end
 

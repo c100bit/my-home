@@ -3,6 +3,7 @@ Seeds::Houses.create!
 Seeds::Users.create!
 
 Seeds::Debtors.create!
+Seeds::Payments.create!
 
 Seeds::News.create!
 Seeds::Pages.create!

@@ -1,6 +1,7 @@
 class User
   class Client < User
     belongs_to :house
+    has_many :payments
   end
 end
 

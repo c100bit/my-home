@@ -1,4 +1,5 @@
 ActiveAdmin.register House do
+  menu priority: 3
   permit_params :address, :budjet, :common_area, :entrance_count, :kind, :title, :total_area, :admin_id, :uk_id
 
   index do

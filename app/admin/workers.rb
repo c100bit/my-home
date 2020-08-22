@@ -1,4 +1,5 @@
 ActiveAdmin.register User::Worker do
+  menu priority: 5
   permit_params :email, :password, :password_confirmation,
                 :company_form, :phone, :name, :address, :company_site, :role
 
