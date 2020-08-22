@@ -22,6 +22,7 @@ end
 #  email                  :string
 #  encrypted_password     :string           default(""), not null
 #  failed_attempts        :integer          default(0), not null
+#  flat                   :string
 #  individual             :boolean          default(FALSE)
 #  locked_at              :datetime
 #  name                   :string

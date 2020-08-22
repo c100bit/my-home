@@ -1,12 +1,13 @@
 ActiveAdmin.register User::Client do
   permit_params :email, :password, :password_confirmation,
-                :name, :phone, :individual, :address, :cadastral_number, :role
+                :name, :phone, :individual, :address, :cadastral_number, :role, :flat
 
   index do
     selectable_column
     column :name
     column :phone
     column :address
+    column :flat
     column :email
     column :individual
     column :cadastral_number
@@ -24,6 +25,7 @@ ActiveAdmin.register User::Client do
       row :individual
       row :phone
       row :address
+      row :flat
       row :email
       row :cadastral_number
       row :role
@@ -50,6 +52,7 @@ ActiveAdmin.register User::Client do
       f.input :cadastral_number
       f.input :phone
       f.input :address
+      f.input :flat
       f.input :role
     end
     f.actions

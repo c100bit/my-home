@@ -13,6 +13,11 @@ ru:
     required: обязательно
   activerecord:
     models:
+      debtor:
+        one: Должник
+        other: Должники
+        few: Должников
+        many: Должников
       house:
         one: Дом
         other: Дома
@@ -54,12 +59,20 @@ ru:
         few: Жилищных организаций
         many: Жилищных организаций
     attributes:
+      debtor:
+        user: Абонент
+        house: Дом
+        flat: Квартира
+        sum: Сумма
+        created_at: Дата создания
+        updated_at: Дата обновления
       user/worker:
         name: Название
         company_form: ОПФ
         company_site: Сайт
       user/client:
         house: Дом
+        flat: Квартира
         name: Абонент
         individual: Физ. лицо
         cadastral_number: Кадастровый номер

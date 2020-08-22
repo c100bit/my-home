@@ -2,6 +2,8 @@ Dir[Rails.root.join('db/seeds/*.rb')].sort.each { |file| require file }
 Seeds::Houses.create!
 Seeds::Users.create!
 
+Seeds::Debtors.create!
+
 Seeds::News.create!
 Seeds::Pages.create!
 Seeds::Comments.create!

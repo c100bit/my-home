@@ -9,6 +9,7 @@ module Seeds
                            phone: '9600000001',
                            address: 'Санкт-Петербург, ул. Тверская, 10',
                            role: :participant,
+                           flat: '10',
                            house: House.first,
                            password: 'participant@test.local')
 
@@ -17,6 +18,7 @@ module Seeds
                            company_form: :oao,
                            company_site: 'http://vesna.ru',
                            company_place: 'Санкт-Петербург, ул. Тверская, 12',
+                           flat: '1',
                            individual: false,
                            cadastral_number: '51:58:0100101:21',
                            phone: '9500000001',
@@ -32,6 +34,7 @@ module Seeds
                            cadastral_number: '51:58:0100101:21',
                            phone: '89600000001',
                            address: 'Санкт-Петербург, ул. Тверская, 11',
+                           flat: '3',
                            role: :citizen,
                            house: House.last,
                            password: 'citizen@test.local')
