@@ -1,3 +1,8 @@
+class User
+  class Client < User
+  end
+end
+
 # == Schema Information
 #
 # Table name: users
@@ -41,16 +46,3 @@
 #  index_users_on_uid_and_provider      (uid,provider) UNIQUE
 #  index_users_on_unlock_token          (unlock_token) UNIQUE
 #
-class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable,
-         :recoverable, :rememberable, :validatable
-
-  include GraphqlDevise::Concerns::Model
-
-  has_many :notices
-
-  enum company_form: %i[ooo oao ao gu]
-  enum role: %i[gji mc participant citizen]
-end

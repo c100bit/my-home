@@ -12,7 +12,14 @@ ActiveAdmin.register House do
     column :uk
 
     column :created_at
-    column :updated_at
     actions
   end
+
+  filter :admin
+  filter :kind
+  filter :address
+  filter :total_area
+  filter :common_area
+  filter :budjet
+  filter :created_at
 end

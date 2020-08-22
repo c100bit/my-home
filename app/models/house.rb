@@ -14,7 +14,6 @@ end
 #  common_area    :float
 #  entrance_count :integer
 #  kind           :integer
-#  title          :string
 #  total_area     :float
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null

@@ -39,11 +39,29 @@ ru:
         few: Комментариев
         many: Комментариев
       admin_user:
-        one: Сотрудник
-        other: Сотрудники
-        few: Сотрудников
-        many: Сотрудников
+        one: Администратор
+        other: Администраторы
+        few: Администраторов
+        many: Администраторов
+      user/client:
+        one: Абонент
+        other: Абоненты
+        few: Абонентов
+        many: Абонентов
+      user/worker:
+        one: Жилищная организация
+        other: Жилищные организации
+        few: Жилищных организаций
+        many: Жилищных организаций
     attributes:
+      user/worker:
+        name: Название
+        company_form: ОПФ
+        company_site: Сайт
+      user/client:
+        name: Абонент
+        individual: Физ. лицо
+        cadastral_number: Кадастровый номер
       house:
         address: Адрес
         kind: Тип дома
@@ -83,9 +101,12 @@ ru:
         author: Автор
         resource: Ресурс
       user:
-        first_name: Имя
-        last_name: Фамилия
-        middle_name: Отчество
         phone: Телефон
         address: Адрес
+        role: Роль
+        roles:
+          gji: Жилищная инспекция
+          mc: Управляющая компания
+          participant: Участник
+          citizen: Проживающий
         allow_password_change: Разрешено сбрасывать пароль

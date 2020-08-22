@@ -37,5 +37,6 @@ ActiveAdmin.register News do
         image_tag url_for(ad.image)
       end
     end
+    active_admin_comments
   end
 end

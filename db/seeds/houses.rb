@@ -2,7 +2,6 @@ module Seeds
   module Houses
     def self.create!
       House.create!(
-        title: 'ул. Тверская, 12',
         kind: :p20,
         uk: User.where(role: :mc).first,
         address: 'Санкт-Петербург, ул. Тверская, 12',
@@ -14,7 +13,6 @@ module Seeds
       )
 
       House.create!(
-        title: 'ул. Тверская, 11',
         kind: :p20,
         uk: User.where(role: :mc).first,
         address: 'Санкт-Петербург, ул. Тверская, 11',

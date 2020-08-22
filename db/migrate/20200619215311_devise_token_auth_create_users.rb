@@ -30,15 +30,17 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[6.0]
       t.datetime :locked_at
 
       ## User Info
-      t.string :user_name
-      t.string :user_passport
+      t.string :name
 
-      t.string :company_name
+      t.string :client_passport
+
       t.integer :company_form
       t.string :company_site
       t.string :company_place
 
       t.boolean :individual, default: false
+
+      t.string :type, null: false
 
       t.string :email
       t.string :cadastral_number

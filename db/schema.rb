@@ -64,7 +64,6 @@ ActiveRecord::Schema.define(version: 2020_08_22_020302) do
   end
 
   create_table "houses", force: :cascade do |t|
-    t.string "title"
     t.integer "kind"
     t.bigint "uk_id"
     t.string "address"
@@ -117,13 +116,13 @@ ActiveRecord::Schema.define(version: 2020_08_22_020302) do
     t.integer "failed_attempts", default: 0, null: false
     t.string "unlock_token"
     t.datetime "locked_at"
-    t.string "user_name"
-    t.string "user_passport"
-    t.string "company_name"
+    t.string "name"
+    t.string "client_passport"
     t.integer "company_form"
     t.string "company_site"
     t.string "company_place"
     t.boolean "individual", default: false
+    t.string "type", null: false
     t.string "email"
     t.string "cadastral_number"
     t.string "phone"

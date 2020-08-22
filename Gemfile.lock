@@ -47,6 +47,13 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_admin-humanized_enum (0.1.1)
+      active_record-humanized_enum
+      activeadmin (>= 1.0.0.pre1)
+    active_record-humanized_enum (0.1.2)
+      activesupport
+      i18n
+      railties
     active_storage_validations (0.8.9)
       rails (>= 5.2.0)
     activeadmin (2.7.0)
@@ -361,6 +368,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_admin-humanized_enum
   active_storage_validations
   activeadmin (~> 2.7.0)
   annotate
