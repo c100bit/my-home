@@ -12,6 +12,8 @@ end
 #  ends_at    :datetime
 #  starts_at  :datetime
 #  text       :text
+#  title      :string
+#  type       :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

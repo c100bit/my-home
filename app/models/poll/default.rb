@@ -1,16 +1,5 @@
-class Poll < ApplicationRecord
-  include ImageHelper
-
-  def count_votes
-    10
-  end
-
-  def count_positive
-    6
-  end
-
-  def count_negative
-    4
+class Poll
+  class Default < Poll
   end
 end
 

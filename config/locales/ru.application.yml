@@ -13,6 +13,16 @@ ru:
     required: обязательно
   activerecord:
     models:
+      poll/default:
+        one: Опрос
+        other: Опросы
+        few: Опросов
+        many: Опросов
+      poll/meeting:
+        one: Собрание собственников
+        other: Собрания собственников
+        few: Собрания собственников
+        many: Собрания собственников
       debtor:
         one: Должник
         other: Должники
@@ -64,6 +74,17 @@ ru:
         few: Жилищных организаций
         many: Жилищных организаций
     attributes:
+      poll:
+        title: Название
+        count_votes: Кол-во голосов
+        count_negative: ПРОТИВ
+        count_positive: ЗА
+        text: Описание
+        starts_at: Начало опроса
+        image: Документы
+        ends_at: Окончание опроса
+        created_at: Дата создания
+        updated_at: Дата обновления
       debtor:
         user: Абонент
         house: Дом

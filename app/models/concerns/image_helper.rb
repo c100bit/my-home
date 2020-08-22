@@ -9,9 +9,9 @@ module ImageHelper
 
     validates :image, attached: true,
                       content_type: ['image/png', 'image/jpg', 'image/jpeg'],
-                      dimension: {width: {in: 200..2000},
-                                  height: {in: 200..2000}},
-                      size: {less_than: 1.megabyte}
+                      dimension: { width: { in: 50..10_000 },
+                                   height: { in: 50..10_000 } },
+                      size: { less_than: 1.megabyte }
   end
 
   def image_url
