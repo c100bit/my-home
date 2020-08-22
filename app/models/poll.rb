@@ -1,4 +1,6 @@
 class Poll < ApplicationRecord
+  after_create :create_in_blockchain
+
   include ImageHelper
 
   has_many :votes
@@ -18,6 +20,13 @@ class Poll < ApplicationRecord
 
   def result
     count_positive - count_negative
+  end
+
+  private
+
+  def create_in_blockchain
+    documents_hashes = IPFSClient.new.upload_documents(self)
+    Blockchain.new.create_poll(id, text, starts_at, ends_at, documents_hashes, {})
   end
 end
 

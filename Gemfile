@@ -33,6 +33,7 @@ gem 'config'
 gem 'ethereum.rb'
 gem 'eth'
 gem 'rs_russian', github: 'rs-pro/russian', branch: 'master'
+gem 'ipfs-api'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

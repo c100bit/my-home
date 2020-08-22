@@ -219,6 +219,7 @@ GEM
       has_scope (~> 0.6)
       railties (>= 5.0, < 6.1)
       responders (>= 2, < 4)
+    ipfs-api (0.3.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
     jmespath (1.4.0)
@@ -405,6 +406,7 @@ DEPENDENCIES
   graphiql-rails
   graphql
   graphql_devise
+  ipfs-api
   jbuilder (~> 2.7)
   listen (~> 3.2)
   mini_magick
