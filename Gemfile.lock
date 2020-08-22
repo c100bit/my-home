@@ -321,8 +321,6 @@ GEM
       rack (>= 1.5.0)
       rack-protection (>= 1.5.0)
       redis (>= 3.3.5, < 5)
-    simpleidn (0.1.1)
-      unf (~> 0.1.4)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -342,9 +340,6 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.7)
     unicode (0.4.4.4)
     warden (1.2.8)
       rack (>= 2.0.6)
@@ -391,7 +386,6 @@ DEPENDENCIES
   rspec-rails (~> 4.0)
   sass-rails (>= 6)
   sidekiq
-  simpleidn
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
