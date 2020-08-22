@@ -1,0 +1,76 @@
+ru:
+  graphql_devise:
+    sessions:
+      bad_credentials: Неверные логин или пароль
+  formtastic:
+    yes: Да
+    no: Нет
+    create: Создать %{model}
+    update: Обновить %{model}
+    submit: Сохранить %{model}
+    cancel: Отменить %{model}
+    reset: Обнулить %{model}
+    required: обязательно
+  activerecord:
+    models:
+      news:
+        one: Новость
+        other: Новости
+        few: Новости
+        many: Новости
+      page:
+        one: Страница
+        other: Страницы
+        few: Страниц
+        many: Страниц
+      comment:
+        one: Комментарий
+        other: Комментарии
+        few: Комментариев
+        many: Комментариев
+      active_admin/comment:
+        one: Комментарий
+        other: Комментарии
+        few: Комментариев
+        many: Комментариев
+      admin_user:
+        one: Сотрудник
+        other: Сотрудники
+        few: Сотрудников
+        many: Сотрудников
+    attributes:
+      news:
+        id: №
+        title: Заголовок
+        description: Текст
+        created_at: Дата создания
+        updated_at: Дата обновления
+      page:
+        id: №
+        name: Название
+        title: Заголовок
+        text: Текст
+        created_at: Дата создания
+        updated_at: Дата обновления
+      admin_user:
+        id: №
+        email: E-mail
+        current_sign_in_at: Дата текущего входа
+        sign_in_count: Количество входов
+        created_at: Дата создания
+      active_admin/comment:
+        namespace: Область
+        resource_type: Тип ресурса
+        author_type: Тип автора
+        body: Текст
+        created_at: Дата создания
+        updated_at: Дата обновления
+        author: Автор
+        resource: Ресурс
+      user:
+        first_name: Имя
+        last_name: Фамилия
+        middle_name: Отчество
+        phone: Телефон
+        address: Адрес
+        allow_password_change: Разрешено сбрасывать пароль
