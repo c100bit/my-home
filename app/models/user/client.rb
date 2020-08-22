@@ -1,8 +1,17 @@
 class User
   class Client < User
+    after_create :create_blockchain_account
+
     belongs_to :house
     has_many :payments
     has_many :votes
+
+    private
+
+    def create_blockchain_account
+      address, private_key_hex = Blockchain.new_account
+      update_attributes(blockchain_address: address, blockchain_key: private_key_hex)
+    end
   end
 end
 
@@ -13,6 +22,8 @@ end
 #  id                     :bigint           not null, primary key
 #  address                :string
 #  allow_password_change  :boolean          default(FALSE)
+#  blockchain_address     :string
+#  blockchain_key         :string
 #  cadastral_number       :string
 #  client_passport        :string
 #  company_form           :integer

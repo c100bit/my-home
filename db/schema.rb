@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_22_182643) do
+ActiveRecord::Schema.define(version: 2020_08_22_185019) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -127,6 +127,7 @@ ActiveRecord::Schema.define(version: 2020_08_22_182643) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "title"
     t.string "type"
+    t.bigint "contract_poll_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -161,6 +162,8 @@ ActiveRecord::Schema.define(version: 2020_08_22_182643) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "house_id"
     t.string "flat"
+    t.string "blockchain_address"
+    t.string "blockchain_key"
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["house_id"], name: "index_users_on_house_id"

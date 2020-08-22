@@ -10,6 +10,8 @@ end
 #  id                     :bigint           not null, primary key
 #  address                :string
 #  allow_password_change  :boolean          default(FALSE)
+#  blockchain_address     :string
+#  blockchain_key         :string
 #  cadastral_number       :string
 #  client_passport        :string
 #  company_form           :integer

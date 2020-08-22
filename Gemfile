@@ -30,6 +30,8 @@ gem 'mini_magick'
 gem 'aws-sdk-s3', require: false
 gem 'graphql_devise'
 gem 'config'
+gem 'ethereum.rb'
+gem 'eth'
 gem 'rs_russian', github: 'rs-pro/russian', branch: 'master'
 
 # Use Redis adapter to run Action Cable in production
