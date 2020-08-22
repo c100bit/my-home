@@ -13,6 +13,11 @@ ru:
     required: обязательно
   activerecord:
     models:
+      house:
+        one: Дом
+        other: Дома
+        few: Домов
+        many: Домов
       news:
         one: Новость
         other: Новости
@@ -39,6 +44,16 @@ ru:
         few: Сотрудников
         many: Сотрудников
     attributes:
+      house:
+        address: Адрес
+        kind: Тип дома
+        uk: Управляющая компания
+        total_area: Общая площадь
+        common_area: Площадь общего имущества
+        admin: Администратор
+        budjet: Бюджет
+        created_at: Дата создания
+        updated_at: Дата обновления
       news:
         id: №
         title: Заголовок
