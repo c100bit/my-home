@@ -1,9 +1,15 @@
 class Vote < ApplicationRecord
+  after_create :create_in_blockchain
+
   belongs_to :user
   belongs_to :poll
 
   scope :positive, -> { where(supports: true) }
   scope :negative, -> { where(supports: false) }
+
+  def create_in_blockchain
+    Blockchain.new.vote(poll.contract_poll_id, user.blockchain_address, supports)
+  end
 end
 
 # == Schema Information
