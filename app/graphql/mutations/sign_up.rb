@@ -1,6 +1,5 @@
 module Mutations
   class SignUp < BaseMutation
-
     argument :email,                 String, required: true
     argument :password,              String, required: true
     argument :password_confirmation, String, required: true
@@ -17,9 +16,8 @@ module Mutations
       if user.save
         user
       else
-        fail GraphQL::ExecutionError, user.errors.full_messages.join(', ')
+        raise GraphQL::ExecutionError, user.errors.full_messages.join(', ')
       end
     end
-
   end
 end
