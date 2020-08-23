@@ -413,10 +413,13 @@ input:-webkit-autofill:focus {
   padding: 0 15px;
 }
 
-.mainmenu-area .navbar-brand img {
-  height: 100px;
+.mainmenu-area.affix .navbar-brand img {
+  height: 50px;
 }
 
+.mainmenu-area.affix-top .navbar-brand img {
+    height: 100px;
+  }
 /*-- 6. Page-Title --*/
 
 .page-title .title {
